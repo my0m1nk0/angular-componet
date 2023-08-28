@@ -1,0 +1,14 @@
+#target,#multi{
+    height: 100px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.border-style{
+    border: 1px solid chartreuse;
+}
+.show{
+    box-shadow: 2px 2px 2px gray;
+}

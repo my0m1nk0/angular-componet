@@ -1,0 +1,24 @@
+
+<h3>Attribute Binding</h3>
+
+
+<table class="table table-primary text-center">
+   <thead>
+   <tr>
+       <th>One</th>
+       <th>Two</th>
+       <th>Three</th>
+       <th [attr.rowspan]="three">Row Span</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr>
+       <td>One</td>
+       <td [attr.colspan]="two">Span Two</td>
+   </tr>
+   <tr>
+       <td [attr.colspan]="three"></td>
+   </tr>
+   </tbody>
+</table>
+

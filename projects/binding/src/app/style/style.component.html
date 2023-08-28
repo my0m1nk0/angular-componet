@@ -1,0 +1,9 @@
+
+<h3>Style Binding</h3>
+
+<input type="range" #range (change)="changeFn(range.value)"  min="100" max="1000" style="width: 500px">{{value}}
+
+
+<div [style]="divStyle" [style.width.px]="value">
+
+</div>

@@ -13,3 +13,24 @@
   </tr>
 
 </table>
+
+<h3>Component Properties</h3>
+
+<app-widget [user]="aung" [title]=" 'Use Detail' "></app-widget>
+
+
+
+<h3 class="mt-4 mb-2">Directive Properties</h3>
+
+<div>
+
+  <button (click)="viewCode=1" class="btn btn-primary">view1</button>
+  <button (click)="viewCode=2" class="btn btn-success">view 2</button>
+  <button (click)="viewCode=3" class="btn btn-warning">view 3</button>
+</div>
+<div class="mt-4" [ngSwitch]="viewCode">
+  <div class="bg-primary" style="height: 100px" *ngSwitchCase="1"></div>
+  <div class="bg-success" style="height: 100px" *ngSwitchCase="2"></div>
+  <div class="bg-warning" style="height: 100px" *ngSwitchDefault></div>
+</div>
+
